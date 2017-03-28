@@ -1,3 +1,5 @@
+<h1 class="text-center">Add Student's Record</h1>
+<br>
 <div class="row col-md-12">
 <div class="col-md-6">
                             <div class="card">
@@ -156,7 +158,7 @@
                                        <br>
                                         
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Add record</button>
                                     <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
                                 </div>
                             </div>
