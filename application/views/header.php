@@ -21,10 +21,10 @@ $this->load->helper('url');
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Placement Automation System</title>
+    <title>PAS</title>
 
     <!-- Icons -->
-   
+   <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="<?php echo base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/simple-line-icons.css" rel="stylesheet">
 
@@ -66,12 +66,12 @@ $this->load->helper('url');
             <li class="nav-item px-1">
                 <a class="nav-link" href="#">Dashboard</a>
             </li>
-           <!-- <li class="nav-item px-1">
+            <li class="nav-item px-1">
                 <a class="nav-link" href="#">Users</a>
-            </li> 
+            </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="#">Settings</a>
-            </li>-->
+            </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item hidden-md-down">
@@ -85,7 +85,8 @@ $this->load->helper('url');
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <span class="hidden-md-down">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
 
