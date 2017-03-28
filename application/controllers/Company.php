@@ -6,7 +6,7 @@ class Company extends CI_Controller {
 	/**
 	 * Index Page for this controller.
 	 *
-	 * Maps to the following URL
+	 * Maps to uthe following URL
 	 * 		http://example.com/index.php/welcome
 	 *	- or -
 	 * 		http://example.com/index.php/welcome/index
@@ -20,6 +20,10 @@ class Company extends CI_Controller {
 	 */
 	public function index()
 	{
+
+
+$this->load->view('header');$this->load->view('sidebar');
+
 		$this->load->view('welcome_message');
 	}
 }
