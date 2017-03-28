@@ -18,8 +18,13 @@ class Students extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+public function index()
 	{
-		$this->load->view('welcome_message');
+		
+
+$this->load->view('header');
+$this->load->view('sidebar');
+		$this->load->view('studentsView');
+		$this->load->view('footer');
 	}
 }

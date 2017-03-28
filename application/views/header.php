@@ -24,7 +24,7 @@ $this->load->helper('url');
     <title>PAS</title>
 
     <!-- Icons -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="<?php echo base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/simple-line-icons.css" rel="stylesheet">
 
