@@ -29,9 +29,12 @@ $this->load->model('notice_modal');
 
 	{
 
-		$this->load->view('header');
+
+        //load the method of model
+        $data['notices']=$this->notice_modal->select();
+        $this->load->view('header');
 		$this->load->view('sidebar');
-		$this->load->view('noticeView');
+		$this->load->view('noticeView',$data);
 		$this->load->view('footer');
 
 
@@ -53,9 +56,10 @@ $data = array(
 $this->notice_modal->form_insert($data);
 $data['message'] = 'Success';
 //Loading View
+    $notice['notices']=$this->notice_modal->select();
 $this->load->view('header');
 $this->load->view('sidebar');
-$this->load->view('noticeView', $data);
+$this->load->view('noticeView',$data,$notice);
 $this->load->view('footer');
 
 	}

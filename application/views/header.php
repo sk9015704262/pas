@@ -15,10 +15,7 @@ $this->load->helper('url');
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
-    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
+
     <link rel="shortcut icon" href="img/favicon.png">
 
     <title>PAS</title>
@@ -30,6 +27,20 @@ $this->load->helper('url');
 
     <!-- Main styles for this application -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
+    <!-- Bootstrap and necessary plugins -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="<?php echo base_url() ?>assets/js/views/charts.js"></script>
+
+
+    <!-- GenesisUI main scripts -->
+
+    <script src="<?php echo base_url() ?>assets/js/app.js"></script>
+
 
 </head>
 
@@ -85,7 +96,7 @@ $this->load->helper('url');
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+
                     <span class="hidden-md-down">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">

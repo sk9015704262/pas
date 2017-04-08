@@ -9,5 +9,13 @@ function form_insert($data){
 
 $this->db->insert('notice', $data);
 }
+
+    public function select()
+    {
+        //data is retrive from this query
+        $query = $this->db->get('notice');
+        return $query;
+    }
+
 }
 ?>
