@@ -21,11 +21,11 @@ class Company extends CI_Controller {
 
 	function __construct() {
 parent::__construct();
-$this->load->model('notice_modal');
+$this->load->model('company_model');
 }
 	public function index()
 
-
+/*loading view the first time*/
 
 	{
 
@@ -39,25 +39,28 @@ $this->load->model('notice_modal');
 
 
 	}
+/*adding data to database*/
+public function addcompany()
+{
+	$data= array(
+		'comp_name'=>$this->input->post('comp_name'),
+		'about'=>$this->input->post('about'),
+		'website'=>$this->input->post('website'),
+		'hr_name'=>$this->input->post('hr_name'),
+		'hr_contact'=>$this->input->post('hr_contact'),
+		'dateofPlacement'=>$this->input->post('dateofPlacement'),
+		'min_percentage'=>$this->input->post('min_percentage'));
 
-public function addCompany(){
+/*transfering data to model*/
+$this->company_model->form_insert($data);
+$data['message']='success';
 
-//Setting values for tabel columns
-$data = array(
-'title' => $this->input->post('title'),
-
-);
-//Transfering data to Model
-$this->notice_modal->form_insert($data);
-$data['message'] = 'Success';
-//Loading View
+/*loading view the second time*/
 $this->load->view('header');
 $this->load->view('sidebar');
-$this->load->view('noticeView', $data);
+$this->load->view('companyView',$data);
 $this->load->view('footer');
-
-	}
-
+}
 
 }
 

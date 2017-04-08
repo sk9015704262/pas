@@ -28,21 +28,23 @@ $this->load->model('student_model');
 
 public function index()
 	{
-		
+
+	
+$data['student']=$this->student_model->form_get();
 
 $this->load->view('header');
 $this->load->view('sidebar');
-		$this->load->view('studentsView');
+		$this->load->view('studentsView',$data);
 		$this->load->view('footer');
-	}
+}
 
 
 public function addStudent(){
 
-//Setting values for tabel columns
+//Setting values for table columns
 $data = array(
 'name' => $this->input->post('name'),
-'fname' => $this->input->post('mname'),
+'fname' => $this->input->post('fname'),
 'mname' => $this->input->post('mname'),
 'dob' => $this->input->post('dob'),
 'address' => $this->input->post('address'),
