@@ -18,11 +18,49 @@ class Notice extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	function __construct() {
+parent::__construct();
+$this->load->model('notice_modal');
+}
 	public function index()
+
+
+
 	{
+
 		$this->load->view('header');
-$this->load->view('sidebar');
+		$this->load->view('sidebar');
 		$this->load->view('noticeView');
 		$this->load->view('footer');
+
+
+
+
+
 	}
+
+public function addNotice(){
+
+//Setting values for tabel columns
+$data = array(
+'title' => $this->input->post('title'),
+'body' => $this->input->post('body'),
+'sender' => $this->input->post('sender'),
+'date' => $this->input->post('date')
+);
+//Transfering data to Model
+$this->notice_modal->form_insert($data);
+$data['message'] = 'Success';
+//Loading View
+$this->load->view('header');
+$this->load->view('sidebar');
+$this->load->view('noticeView', $data);
+$this->load->view('footer');
+
+	}
+
+
 }
+
+
