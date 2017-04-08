@@ -31,7 +31,7 @@ $this->load->model('notice_modal');
 
 
         //load the method of model
-        $data['notices']=$this->notice_modal->select();
+        $data['notices']=$this->notice_modal->notice_get('7');
         $this->load->view('header');
 		$this->load->view('sidebar');
 		$this->load->view('noticeView',$data);
@@ -53,13 +53,13 @@ $data = array(
 'date' => $this->input->post('date')
 );
 //Transfering data to Model
-$this->notice_modal->form_insert($data);
+$this->notice_modal->notice_insert($data);
 $data['message'] = 'Success';
 //Loading View
-    $notice['notices']=$this->notice_modal->select();
+    $data['notices']=$this->notice_modal->notice_get('7');
 $this->load->view('header');
 $this->load->view('sidebar');
-$this->load->view('noticeView',$data,$notice);
+$this->load->view('noticeView',$data);
 $this->load->view('footer');
 
 	}

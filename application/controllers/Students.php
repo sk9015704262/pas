@@ -30,7 +30,7 @@ public function index()
 	{
 
 	
-$data['student']=$this->student_model->form_get();
+$data['student']=$this->student_model->form_get(8);
 
 $this->load->view('header');
 $this->load->view('sidebar');
@@ -70,6 +70,7 @@ $data = array(
 //Transfering data to Model
 $this->student_model->form_insert($data);
 $data['message'] = 'Success';
+$data['student']=$this->student_model->form_get('8');
 
 
 //Loading View
@@ -77,6 +78,7 @@ $this->load->view('header');
 $this->load->view('sidebar');
 $this->load->view('studentsView', $data);
 $this->load->view('footer');
+
 
 	}
 

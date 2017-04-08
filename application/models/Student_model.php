@@ -10,8 +10,8 @@ function form_insert($data){
 $this->db->insert('students', $data);
 }
 
-function form_get(){
-
+function form_get($limit){
+$this->db->limit($limit,'0');
 	$data=$this->db->get('students');
 	return $data;
 }
