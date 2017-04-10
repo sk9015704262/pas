@@ -56,7 +56,11 @@ $data = array(
 $this->notice_modal->notice_insert($data);
 $data['message'] = 'Success';
 //Loading View
+<<<<<<< Updated upstream
     $data['notices']=$this->notice_modal->notice_get('7');
+=======
+    $data['notices']=$this->notice_modal->select();
+>>>>>>> Stashed changes
 $this->load->view('header');
 $this->load->view('sidebar');
 $this->load->view('noticeView',$data);
