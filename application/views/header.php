@@ -12,7 +12,6 @@ $this->load->helper('url');
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -26,7 +25,7 @@ $this->load->helper('url');
     <link href="<?php echo base_url() ?>assets/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Main styles for this application -->
-    <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css" >
     <!-- Bootstrap and necessary plugins -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
