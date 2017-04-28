@@ -25,6 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/pas/';
 
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -405,7 +406,7 @@ $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
-
+$config['sess_use_database'] = TRUE;
 /*
 |--------------------------------------------------------------------------
 | Standardize newlines

@@ -1,5 +1,5 @@
 <?php
-class company_model extends CI_Model {
+class Resume_model extends CI_Model {
 
 
 	function __construct() {
@@ -7,13 +7,14 @@ class company_model extends CI_Model {
 	}
 	function form_insert($data){
 
-		$this->db->insert('company', $data);
+		$this->db->insert('resume', $data);
 	}
 
 	function form_get(){
-
-		$data=$this->db->get('company');
+		
+		$data=$this->db->get('resume');
 		return $data;
 	}
+
 }
 ?>

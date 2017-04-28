@@ -23,6 +23,8 @@ $this->load->helper('url');
    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="<?php echo base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/simple-line-icons.css" rel="stylesheet">
+     <link href="<?php echo base_url() ?>assets/css/resume.css" rel="stylesheet">
+
 
     <!-- Main styles for this application -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css" >
@@ -33,12 +35,13 @@ $this->load->helper('url');
 
 
     <!-- Plugins and scripts required by all views -->
-    <script src="<?php echo base_url() ?>assets/js/views/charts.js"></script>
+ 
 
 
     <!-- GenesisUI main scripts -->
 
     <script src="<?php echo base_url() ?>assets/js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
 
 </head>
